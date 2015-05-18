@@ -97,21 +97,27 @@ html, body{
 
 #header{
 	width: 100%;
-
-	#main-nav{
-		position: absolute;
-		ul{
-			li{
-
-				a{
-				}
-			}		
-		}
-	}
 }
 
+#main-nav{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	right: 0;
+	z-index: 1000;
+
+	li{
+		text-align: right;
+		a{
+		}		
+	}
+
+
+}
 
 .section{
+
 	&.section-wim{
 		background-color: $color-1;
 	}
@@ -128,10 +134,12 @@ html, body{
 @media (min-width: 768px){
 
 	body{
-		padding-top: 100px
+		// padding-top: 100px
 	}
 	.section{
 		height: 100%;
+		min-height: 400px;
+		margin-top: -100px;
 	}
 
 	#header{

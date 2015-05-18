@@ -77,36 +77,43 @@ html, body {
 #header {
   width: 100%;
 }
-/* line 101, ../sass/screen.scss */
-#header #main-nav {
+
+/* line 102, ../sass/screen.scss */
+#main-nav {
   position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 1000;
+}
+/* line 110, ../sass/screen.scss */
+#main-nav li {
+  text-align: right;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .section.section-wim {
   background-color: #1abc9c;
 }
-/* line 119, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .section.section-wid {
   background-color: #34495e;
 }
-/* line 123, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .section.section-sah {
   background-color: #3498db;
 }
 
 @media (min-width: 768px) {
-  /* line 130, ../sass/screen.scss */
-  body {
-    padding-top: 100px;
-  }
-
-  /* line 133, ../sass/screen.scss */
+  /* line 139, ../sass/screen.scss */
   .section {
     height: 100%;
+    min-height: 400px;
+    margin-top: -100px;
   }
 
-  /* line 137, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   #header {
     position: fixed;
     height: 100px;
