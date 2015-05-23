@@ -107,12 +107,27 @@ a, a:hover{
 
 #header{
 	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.logo{
+		float: left;
+
+		 h1 a{
+			text-indent: -999em;
+			display: block;
+			background: url('../images/logo.png') no-repeat;
+			width: 237px;
+			height: 45px;
+		}
+	}
 }
 
 #main-nav{
 	position: absolute;
 	right: 20px;
 	z-index: 1000;
+	top: 55px;
 
 	.round-nav-toggle{
 		background: none repeat scroll 0% 0% #E67E22;
@@ -186,11 +201,9 @@ a, a:hover{
 		.round-nav-toggle{
 			span {
 				background-color: transparent;
-				right: 0;
 
 				&:before, &:after{
 					top: 0;
-					right: 13px;
 				}
 
 				&:before {
@@ -214,6 +227,9 @@ a, a:hover{
 }
 
 .section{
+	h1{
+		display: none;
+	}
 
 	&.section-wim{
 		background-color: $color-1;
